@@ -10,17 +10,17 @@ Feature: Getting feedback
   In order to know which words i guessed correctly
 
 
-Scenario: start a new game
-  When i click on start a new game
-  Then i should be redirected to the game and get length of letters with the first letter of an unknown word
+Scenario: Start a new game
+  When I click on start a new game
+  Then I should be redirected to the game and get length of letters with the first letter of an unknown word
 
 
 Scenario: Show existing game
-  Given i am on the game page
-  When i choose to show an existing game
-  Then i should be able to see the state of the game
+  Given I am on the game page
+  When I choose to show an existing game
+  Then I should be able to see the state of the game
 
-Scenario: start a new round
-  Given an existing game
-  When i click on "new round"
-  Then i should see a new game round with a different first letter of an unknown word
+Scenario: Start a new round
+  Given An existing game
+  When I click on "new round"
+  Then I should see a new game round with a different first letter of an unknown word
